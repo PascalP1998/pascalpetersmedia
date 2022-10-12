@@ -34,19 +34,21 @@ body {
 
 .navmenu {
     visibility: hidden;
+    z-index: -1000;
+    position: absolute;
 }
 
-.navbar ul {
+.navmenu ul {
     display: inline-flex;
     list-style: none;
     margin-right: 1em;
 }
 
-.navbar ul li {
+.navmenu ul li {
     padding: 1em;
 }
 
-.navbar a {
+.navmenu a {
     color: white;
     text-decoration: none;
 }
@@ -60,8 +62,53 @@ body {
     border-bottom: 2px rgb(54, 194, 75) solid;
 }
 
+#hamburger-btn {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+#hamburger-btn img:hover {
+    fill:rgb(54, 194, 75)
+}
+
+#hamburger-menu {
+    visibility: hidden;
+    position: absolute;
+    z-index: -10000;
+    background: rgba(119, 184, 133, 0.598);
+    padding: 1em;
+    position: fixed;
+}
+
+#hamburger-menu ul {
+    list-style: none;
+}
+
+#hamburger-menu ul li {
+    padding: 1em;
+}
+
+#hamburger-menu a {
+    color: black;
+    text-decoration: none;
+}
+
+#hamburger-menu a:hover {
+    color: white;
+}
+
 @media ( min-width: 900px ) {
     .navmenu {
         visibility: visible;
+        z-index: auto;
+        position: inherit;
+    }
+    .hamburger {
+        visibility: hidden;
     }
 }
