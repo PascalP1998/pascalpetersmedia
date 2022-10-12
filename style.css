@@ -7,10 +7,7 @@ html {
 body {
     margin: 0;
     background-image: url("media/background.svg");
-}
-
-.wrapper {
-    display: flex;
+    overflow: hidden;
 }
 
 .navbar {
@@ -18,7 +15,7 @@ body {
     width: 100%;
     padding: 1em;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-content: center;
 }
 
@@ -82,7 +79,8 @@ body {
     z-index: -10000;
     background: rgba(119, 184, 133, 0.598);
     padding: 1em;
-    position: fixed;
+    right: 0;
+    border-radius: 5%;
 }
 
 #hamburger-menu ul {
@@ -102,6 +100,34 @@ body {
     color: white;
 }
 
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    background-color: white;
+    color: black;
+    padding: 3em;
+    width: 100%;
+    z-index: 2;
+    position: relative;
+}
+
+.me {
+    margin-top: -110px;
+    z-index: 1;
+    position: sticky;
+    left: 10%;
+    margin-top: 3em;
+}
+
+#me {
+    width: 40%;
+}
+
 @media ( min-width: 900px ) {
     .navmenu {
         visibility: visible;
@@ -110,5 +136,13 @@ body {
     }
     .hamburger {
         visibility: hidden;
+    }
+    .content {
+        margin: 5em;
+        width: 90%;
+        border-radius: 1em;
+    }
+    #me {
+        width: 20%;
     }
 }
