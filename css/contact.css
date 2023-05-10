@@ -1,0 +1,106 @@
+.formular {
+    background-color: white;
+    border-radius: 20px;
+    border: 4px rgb(189, 189, 189) solid;
+    width: 700px;
+    height: 700px;
+    margin: 2em;
+}
+
+.formular h2 {
+    text-align: center;
+}
+
+form {
+    width: 80%;
+    margin: 0;
+    text-align: left;
+    padding: 2em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form input {
+    width: 100%;
+    display: block;
+    margin-bottom: 1em;
+}
+
+form input[type="text"] {
+    padding: 0.5em 1em;
+    font-size: 15px;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+form input[type="email"] {
+    padding: 0.5em 1em;
+    font-size: 15px;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+input[type="text"]:focus {
+  border: 1px solid black;
+}
+
+input[type="email"]:focus {
+  border: 1px solid black;
+}
+
+form textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 1px solid rgba(0,0,0,0.1);
+  background-color: #f8f8f8;
+  resize: none;
+  display: block;
+  font-size: 15px;
+}
+
+form textarea:focus {
+    border: 1px solid black;
+}
+
+form label {
+    font-size: 20px;
+    text-align: left;
+}
+
+input[type="submit"] {
+    background-color: rgb(54, 194, 75);
+    border: none;
+    padding: 1em;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    width: 100%;
+    margin-top: 2em;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: black;
+    color: white;
+}
+
+button {
+    background-color: rgb(54, 194, 75);;
+    border: none;
+    padding: 1em;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    margin-top: 2em;
+    cursor: pointer;
+}
+
+.other-link {
+    background-color: white;
+    border-radius: 20px;
+    border: 4px rgb(189, 189, 189) solid;
+    width: 700px;
+    height: 200px;
+    margin: 2em;
+    text-align: center;
+}

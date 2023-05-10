@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <title>Pascal Peters Media - Kontakt</title>
+        <link href="css/style.css" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Das Portfolio von Pascal Peters">
+    </head>
+    <body>
+        <nav class="navbar">
+            <h1>Pascal Peters <span class="green">Media</span>.</h1>
+            <ul>
+                <li><a href="index.html">Profil</a></li>
+                <li><a href="projects.html">Projekte</a></li>
+                <li><a href="gallery.html">Galerie</a></li>
+                <li><a href="contact.html" class="current">Kontakt</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <h1>Kontakt</h1>
+            <div class="formular">
+                <h2>Kontaktformular</h2>
+                <form action="thanks.php" method="POST">
+                    <label for="forname">Vorname*</label>
+                    <input type="text" id="forname" name="forname" required>
+                    <label for="surname">Nachname*</label>
+                    <input type="text" id="surname" name="surname" required>
+                    <label for="email">E-Mail*</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Nachricht*</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <input type="submit" value="Abschicken">
+                    <?php
+                    $sender = $_POST["email"];
+                    $receiver = "pascalpeters98@icloud.com";
+                    $subject = "Formular-Eingang";
+                    $message = "Von: " . $_POST["forname"] . " " . $_POST["surname"] . "\n" . "Nachricht: " . $_POST["message"];
+                    $headers = "From:" . $sender;
+                    
+                    if (mail($receiver, $subject, $message, $headers)) {
+                        echo "";
+                    } else {
+                        echo "Fehler: Versuchen Sie es erneut";
+                    }
+                    ?>
+                </form>
+            </div>
+            <div class="other-link">
+                <h2>Ansonsten erreichbar über</h2>
+                <p><strong>E-Mail: </strong></p><a href="mailto:pascalpeters98@icloud.com">pascalpeters98@icloud.com</a>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <p>&copy von Pascal Peters 2023</p>
+    </footer>
+</html>

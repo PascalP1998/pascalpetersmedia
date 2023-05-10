@@ -1,0 +1,64 @@
+.flex-wrap {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project {
+    margin: 5em;
+    border-radius: 20px;
+    height: 400px;
+    width: 500px;
+    background-color: white;
+    border: 4px rgb(189, 189, 189) solid;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+} 
+
+.project .description img {
+    width: 80%;
+    padding: 0.5em;
+}
+
+.project .links {
+    margin: 1em;
+}
+
+.project .links a {
+    margin: 1em;
+}
+
+.project p {
+    padding: 0.5em;
+}
+
+.project-noweb {
+    margin: 5em;
+    border-radius: 20px;
+    height: 260px;
+    width: 500px;
+    background-color: white;
+    border: 4px rgb(189, 189, 189) solid;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+} 
+
+.project-noweb .links {
+    margin: 1em;
+}
+
+.project-noweb .links a {
+    margin: 1em;
+}
+
+.project-noweb p {
+    padding: 0.5em;
+} 

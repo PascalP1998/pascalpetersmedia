@@ -2,48 +2,59 @@
 <html lang="de">
     <head>
         <title>Pascal Peters Media</title>
-        <link href="style.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Das Portfolio von Pascal Peters">
     </head>
     <body>
-        <div class="navbar">
-            <div class="logo">
-                <img src="media/logo-light.svg">
-            </div>
-            <div class="hamburger">
-                <button id="hamburger-btn" onclick="hamburgerMenu()"><img src="media/icons/menu.svg" width=30></button>
-                <div id="hamburger-menu">
-                    <ul>
-                        <li><a href="index.html" class="current">Über mich</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="projects.html">Projekte</a></li>
-                        <li><a href="gallery.html">Galerie</a></li>
-                        <li><a href="contact.html">Kontakt</a></li>
-                    </ul>
+        <nav class="navbar">
+            <h1>Pascal Peters <span class="green">Media</span>.</h1>
+            <ul>
+                <li><a href="index.html" class="current">Profil</a></li>
+                <li><a href="projects.html">Projekte</a></li>
+                <li><a href="gallery.html">Galerie</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <section class="center-text">
+                <img src="img/ich.png" width="200" class="pfp">
+                <h1>Hi! Ich bin Pascal Peters und ich ...</h1>
+                <div class="hobby">
+                    <img src="img/icons/student.svg" width="90" alt="Abiturmütze">
+                    <img src="img/icons/code.svg" width="90" alt="Programmieren">
+                    <img src="img/icons/camera.svg" width="90" alt="Kamera">
                 </div>
-            </div>
-            <div class="navmenu">
                 <ul>
-                    <li><a href="index.html" class="current">Über mich</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="projects.html">Projekte</a></li>
-                    <li><a href="gallery.html">Galerie</a></li>
-                    <li><a href="contact.html">Kontakt</a></li>
+                    <li>... studiere an der Universität Duisburg-Essen <em>Angewandte Kognitions- und Medienwissenschaften</em> im 10. Semester</li>
+                    <li>... arbeite zur Zeit an meiner Bachelor-Abschlussarbeit</li>
+                    <li>... habe Erfahrungen in der Webentwicklung mit HTML, CSS und JS</li>
+                    <li>... habe solide Grunderfahrung mit Python und Basiserfahrung mit Java und C#</li>
+                    <li>... möchte in die IT-Branche einsteigen, gewünscht als Software-Entwickler, aber auch gerne in das UX/UI-Design/Consulting, IT-Consulting, etc.</li>
+                    <li>... fotografiere gern in meiner Freizeit</li>
                 </ul>
-            </div>
+            </section>
+            <section class="other">
+                <article class="card">
+                    <img src="img/icons/github.svg" width="50" alt="GitHub">
+                    <h2><a href="projects.html">Meine Projekte</a></h2>
+                    <p>Hier kommst du zu meinen Projekten</p>
+                </article>
+                <article class="card">
+                    <img src="img/icons/image-gallery.svg" width="50" alt="Fotoalbum">
+                    <h2><a href="gallery.html">Meine Galerie</a></h2>
+                    <p>Hier kommst du zu meiner Fotogalerie</p>
+                </article>
+                <article class="card">
+                    <img src="img/icons/contact-book.svg" width="50" alt="Kontaktbuch">
+                    <h2><a href="contact.html">Kontakt</a></h2>
+                    <p>Von hier aus kann man mich kontaktieren</p>
+                </article>
+            </section>
         </div>
-        <div class="wrapper">
-            <div class="me" >
-                <img id="me" src="media/ich.png" alt="Ein Foto von mir">
-            </div>
-            <div class="content">
-            </div>
-        </div>
-        <script src="script.js"></script>
     </body>
     <footer>
-
+        <p>&copy von Pascal Peters 2023</p>
     </footer>
 </html>
