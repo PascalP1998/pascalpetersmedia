@@ -2,20 +2,39 @@
 @import url("projects.css");
 @import url("media-query.css");
 @import url("contact.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
     box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
+    
 }
 
 html, body {
     margin: 0;
     width: 100%;
     height: 100%;
+    font-family: "Work Sans", sans-serif;
 }
 
 .green {
-    color: rgb(54, 194, 75);
+    color: #00CBA9;
+}
+
+.redorange {
+    color: #DE541E;
+}
+
+.orange {
+    color: #F5B841;
+}
+
+.light-black {
+    color: #3F3F37;
+}
+
+.white {
+    color: #FEFFFE;
 }
 
 .navbar {
@@ -24,6 +43,8 @@ html, body {
    width: 100%;
    justify-content: space-between;
    margin-bottom: 0;
+   text-transform: uppercase;
+   font-weight: 600;
 }
 
 .navbar h1 {
@@ -41,17 +62,17 @@ html, body {
 }
 
 .navbar a {
-    color: black;
+    color: #3F3F37;
     text-decoration: none;
 }
 
 .navbar a:hover {
-    color:rgb(54, 194, 75);
+    color:#00CBA9;
 }
 
 .current {
-    color:rgb(54, 194, 75) !important;
-    border-bottom: 2px rgb(54, 194, 75) solid;
+    color:#00CBA9 !important;
+    border-bottom: 2px #00CBA9 solid;
 }
 
 .container {
@@ -70,8 +91,9 @@ html, body {
 }
 
 footer {
-    background-color: rgb(37, 37, 37);
-    color: rgb(212, 212, 212);
+    text-align: center;
+    background-color: #494949;
+    color: #FEFFFE;
     padding: 1em;
     position: relative;
     bottom: 0;
@@ -79,8 +101,18 @@ footer {
     right: 0;
 }
 
+.title {
+    text-transform: uppercase;
+}
+
 .center-text {
     text-align: center;
+}
+
+.text-block {
+    width: 50%;
+    margin-bottom: 6rem;
+    line-height: 1.5; 
 }
 
 .pfp {
@@ -122,14 +154,14 @@ footer {
 }
 
 .container a {
-    color:rgb(54, 194, 75);
+    color:#00CBA9;
     text-decoration: none;
-    border-bottom: 2px rgb(54, 194, 75) solid;
+    border-bottom: 2px #00CBA9 solid;
 }
 
 .container a:hover {
-    color:black;
-    border-bottom: black 2px solid;
+    color:#3F3F37;
+    border-bottom: #3F3F37 2px solid;
 
 }
 
@@ -142,3 +174,36 @@ footer {
     margin-right: auto;
     text-align: center;
 }
+
+.icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    margin: 1rem;
+}
+.icon-linkedin {
+    background-image: url(../img/icons/linkedin_color.svg);
+}
+.icon-linkedin:hover,
+.icon-linkedin:focus {
+    background-image: url(../img/icons/linkedin_color_hover.svg);
+}
+
+.icon-instagram {
+    background-image: url(../img/icons/instagram_color.svg);
+}
+.icon-instagram:hover,
+.icon-instagram:focus {
+    background-image: url(../img/icons/instagram_color_hover.svg);
+}
+  
+.font-serif {
+    font-family: "Merriweather", serif !important;
+}
+
+@media only screen and (max-width: 1000px) {
+    .text-block {
+        width: 90%;
+    }    
+  }

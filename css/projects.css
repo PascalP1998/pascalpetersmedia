@@ -10,7 +10,7 @@
     height: 400px;
     width: 500px;
     background-color: white;
-    border: 4px rgb(189, 189, 189) solid;
+    border: 2px #3F3F37 solid;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -42,7 +42,7 @@
     height: 260px;
     width: 500px;
     background-color: white;
-    border: 4px rgb(189, 189, 189) solid;
+    border: 2px #3F3F37 solid;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
