@@ -1,7 +1,7 @@
 {
     "posts": {
         "post1": {
-            "image": "img/blog-img/javascript.jpg",
+            "image": "../img/blog-img/javascript.jpg",
             "title": "Dynamische Blogeinträge mit JSON und JavaScript",
             "date": "19.09.2023",
             "text": "Anders als man vielleicht denken mag, sind diese Beiträge nicht im HTML-Code hardcodiert. Stattdessen nutze ich eine JSON-Datei, um die Inhalte zu speichern, und greife auf diese Daten mithilfe von JavaScript zu, um sie dann in die entsprechenden DIV-Elemente im HTML-Dokument einzufügen. Warum wähle ich diesen Ansatz? Die Antwort liegt in der Flexibilität und der effizienteren Verwaltung meiner Inhalte. Statt jeden Beitrag manuell im HTML zu bearbeiten, kann ich einfach die JSON-Datei anpassen. Das bedeutet im Prinzip: wesentlich weniger repetitive Arbeit und vorallem Übersicht. <br><br>Die Umsetzung ist eigentlich recht simpel. Ich habe eine JSON-Datei, in der alle Informationen für meine Beiträge gespeichert sind, von Texten über Bilder bis hin zu Verlinkungen. Mithilfe von JavaScript lese ich diese Daten aus der Datei aus und füge sie dynamisch in die entsprechenden Div-Elemente in meinem HTML-Dokument ein. Diese Methode bietet nicht nur eine effiziente Aktualisierung von Inhalten, sondern ermöglicht auch eine bessere Trennung von Inhalt und Darstellung. <br><br>Wenn ihr also diese Seite seht, wisst ihr, dass hier keine mühsame Handcodierung im HTML stattfindet. Stattdessen steckt hinter den Kulissen ein JSON-Datei-basiertes System, das die Erstellung und Verwaltung von Beiträgen erheblich erleichtert. <br><br> Das wäre es auch schon mit dem allerersten Blogeintrag auf dieser Seite. Bis zum nächsten Mal!"
