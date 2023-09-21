@@ -1,6 +1,6 @@
 function getBlogposts() {
     return new Promise((resolve, reject) => {
-        fetch('https://github.com/PascalP1998/pascalpetersmedia/js/blogposts.json')
+        fetch('https://pascalp1998.github.io/pascalpetersmedia/js/blogposts.json')
             .then(response => {
                 if (!response.ok) {
                     throw new Error("Fehler beim Laden der JSON-Daten");
