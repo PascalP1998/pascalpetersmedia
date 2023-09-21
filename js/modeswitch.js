@@ -22,7 +22,7 @@ function goDark() {
     } catch {};
     try {
         const modebtn = document.getElementById("mode-btn");
-        modebtn.style.backgroundImage = "url(/img/icons/sun.svg)"
+        modebtn.style.backgroundImage = "url(img/icons/sun.svg)"
     } catch {};
     
 }
