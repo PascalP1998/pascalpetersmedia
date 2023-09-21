@@ -1,6 +1,6 @@
 function getBlogposts() {
     return new Promise((resolve, reject) => {
-        fetch('../blogposts.json')
+        fetch('blogposts.json')
             .then(response => {
                 if (!response.ok) {
                     throw new Error("Fehler beim Laden der JSON-Daten");
