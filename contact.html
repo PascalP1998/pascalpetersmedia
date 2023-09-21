@@ -8,7 +8,7 @@
         <meta name="description" content="Das Portfolio von Pascal Peters">
     </head>
     <body>
-        <nav class="navbar">
+        <nav id="navbar" class="navbar">
             <h1>Pascal Peters <span class="green">Media</span>.</h1>
             <ul>
                 <li><a href="index.html">Profil</a></li>
@@ -16,6 +16,7 @@
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="gallery.html">Galerie</a></li>
                 <li><a href="contact.html" class="current">Kontakt</a></li>
+                <li><button id="mode-btn" class="icon mode-btn"></button></li>
             </ul>
         </nav>
         <div class="container">
@@ -24,19 +25,20 @@
                 <article class="project-noweb">
                     <div class="description">
                         <h2>E-Mail</h2>
-                        <img src="img/icons/mail.svg" width="40" alt="E-Mail">
+                        <img class="icon" src="img/icons/mail.svg" width="40" alt="E-Mail">
                         <p>Schreibe mir eine E-Mail unter: <br><a href="mailto:pascalpeters98@icloud.com">Pascal Peters, pascalpeters98@icloud.com</a></p>
                     </div>
                 </article>
                 <article class="project-noweb">
                     <div class="description">
                         <h2>LinkedIn</h2>
-                        <img src="img/icons/linkedin.svg" width="40" alt="LinkedIn-Logo">
+                        <img class="icon" src="img/icons/linkedin.svg" width="40" alt="LinkedIn-Logo">
                         <p>Vernetze dich mit mir auf LinkedIn: <a href="https://www.linkedin.com/in/pascal-peters-15a417276/" target=”_blank>Pascal Peters</a></p>
                     </div>
                 </article>
             </section>
         </div>
+        <script src="js/modeswitch.js"></script>
     </body>
     <footer>
         <span>

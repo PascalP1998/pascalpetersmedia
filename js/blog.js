@@ -1,6 +1,6 @@
 function getBlogposts() {
     return new Promise((resolve, reject) => {
-        fetch("blogposts.json")
+        fetch("../blogposts.json")
             .then(response => {
                 if (!response.ok) {
                     throw new Error("Fehler beim Laden der JSON-Daten");
@@ -24,6 +24,9 @@ document.addEventListener("DOMContentLoaded", () => {
             const post = savedBlogposts[postKey];
             const postElement = document.createElement("div");
             postElement.classList.add("blogpost");
+            if (localStorage["mode"] == "dark") {
+                postElement.classList.add("dark-mode");
+            }
             postElement.innerHTML = `
                 <h2>${post.title}</h2>
                 <h3>${post.date}</h3>

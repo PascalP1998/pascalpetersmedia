@@ -8,7 +8,7 @@
         <meta name="description" content="Das Portfolio von Pascal Peters">
     </head>
     <body>
-        <nav class="navbar">
+        <nav id="navbar" class="navbar">
             <h1>Pascal Peters <span class="green">Media</span>.</h1>
             <ul>
                 <li><a href="index.html" class="current">Profil</a></li>
@@ -16,16 +16,17 @@
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="gallery.html">Galerie</a></li>
                 <li><a href="contact.html">Kontakt</a></li>
+                <li><button id="mode-btn" class="icon mode-btn"></button></li>
             </ul>
         </nav>
         <div class="container">
-            <section class="center-text">
+            <section class="center-text  animated fadeInLeft">
                 <img src="img/ich.png" width="200" class="pfp">
                 <h1 class="title">Hi! Ich bin Pascal Peters und ich ...</h1>
                 <div class="hobby">
-                    <img src="img/icons/student.svg" width="90" alt="Abiturmütze">
-                    <img src="img/icons/code.svg" width="90" alt="Programmieren">
-                    <img src="img/icons/camera.svg" width="90" alt="Kamera">
+                    <img class="icon" src="img/icons/student.svg" style="width: 90px !important; height: 90px !important" alt="Abiturmütze">
+                    <img class="icon" src="img/icons/code.svg" style="width: 90px !important; height: 90px !important" alt="Programmieren">
+                    <img class="icon" src="img/icons/camera.svg" style="width: 90px !important; height: 90px !important" alt="Kamera">
                 </div>
                 <ul class="font-serif">
                     <li>... studiere an der Universität Duisburg-Essen <em>Angewandte Kognitions- und Medienwissenschaften</em> im 10. Semester</li>
@@ -36,35 +37,36 @@
                     <li>... fotografiere gern in meiner Freizeit und veröffentliche meine Werke auf Instagram</li>
                 </ul>
             </section>
-            <section class="text-block">
+            <section class="text-block  animated fadeInLeft">
                 <h2>Was findest du auf meiner Seite?</h2>
                 <p class="font-serif">Hauptsächlich möchte ich hier alles zeigen, was ich bisher gemacht habe. Seien es kleinere Coding-Projekte, meine Fotos oder 
                                       bald auch Blogtexte zu diversen Themen, die mich interessieren. Wenn ich dich neugierig machen konnte, schau dich ein bisschen um
                                     und solltest du mich kontaktieren wollen, kannst du das selbstverständlich machen! Danke für's Lesen!</p>
             </section>
-            <section class="other">
+            <section class="other  animated fadeInLeft">
                 <article class="card">
-                    <img src="img/icons/github.svg" width="50" alt="GitHub">
+                    <img class="icon" src="img/icons/github.svg" alt="GitHub">
                     <h2><a href="projects.html">Meine Projekte</a></h2>
                     <p>Hier kommst du zu meinen Projekten</p>
                 </article>
                 <article class="card">
-                    <img src="img/icons/blog.svg" width="50" alt="Blog">
+                    <img class="icon" src="img/icons/blog.svg" alt="Blog">
                     <h2><a href="blog.html">Mein Blog</a></h2>
                     <p>Hier kommst du zu meinem Blog</p>
                 </article>
                 <article class="card">
-                    <img src="img/icons/image-gallery.svg" width="50" alt="Fotoalbum">
+                    <img class="icon" src="img/icons/image-gallery.svg" alt="Fotoalbum">
                     <h2><a href="gallery.html">Meine Galerie</a></h2>
                     <p>Hier kommst du zu meiner Fotogalerie</p>
                 </article>
                 <article class="card">
-                    <img src="img/icons/contact-book.svg" width="50" alt="Kontaktbuch">
+                    <img class="icon" src="img/icons/contact-book.svg" alt="Kontaktbuch">
                     <h2><a href="contact.html">Kontakt</a></h2>
                     <p>Von hier aus kann man mich kontaktieren</p>
                 </article>
             </section>
         </div>
+        <script src="js/modeswitch.js"></script>
     </body>
     <footer>
         <span>

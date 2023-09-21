@@ -8,7 +8,7 @@
         <meta name="description" content="Die Projekte von Pascal Peters">
     </head>
     <body>
-        <nav class="navbar">
+        <nav id="navbar" class="navbar">
             <h1>Pascal Peters <span class="green">Media</span>.</h1>
             <ul>
                 <li><a href="index.html">Profil</a></li>
@@ -16,18 +16,19 @@
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="gallery.html">Galerie</a></li>
                 <li><a href="contact.html">Kontakt</a></li>
+                <li><button id="mode-btn" class="icon mode-btn"></button></li>
             </ul>
         </nav>
         <div class="container">
             <section class="center-text">
                 <h1>Meine Projekte</h1>
-                <img src="img/icons/github.svg" width="100" alt="GitHub">
+                <img class="icon" src="img/icons/github.svg" style="width: 90px !important; height: 90px !important" alt="GitHub">
             </section>
             <section class="flex-wrap">
                 <article class="project-noweb">
                     <div class="description">
                         <h2>Schere, Stein, Papier</h2>
-                        <img src="img/icons/javascript.svg" width="40" alt="Web">
+                        <img class="icon" src="img/icons/javascript.svg" width="40" alt="Web">
                         <p>Spiele "Schere, Stein, Papier" gegen den Computer</p>
                     </div>
                     <div class="links">
@@ -38,7 +39,7 @@
                 <article class="project-noweb">
                     <div class="description">
                         <h2>BMI-Rechner</h2>
-                        <img src="img/icons/javascript.svg" width="40" alt="Web">
+                        <img class="icon" src="img/icons/javascript.svg" width="40" alt="Web">
                         <p>Ein einfacher Online BMI-Rechner</p>
                     </div>
                     <div class="links">
@@ -49,7 +50,7 @@
                 <article class="project-noweb">
                     <div class="description">
                         <h2>Charakter Generator</h2>
-                        <img src="img/icons/javascript.svg" width="40" alt="Web">
+                        <img class="icon" src="img/icons/javascript.svg" width="40" alt="Web">
                         <p>Erstelle zufallsbasierte Fantasy-Charaktere für das Schreiben von Geschichten, für Tabletop-Rollenspiele, etc.</p>
                     </div>
                     <div class="links">
@@ -60,7 +61,7 @@
                 <article class="project-noweb">
                     <div class="description">
                         <h2>Password Generator</h2>
-                        <img src="img/icons/python.svg" width="40" alt="Python">
+                        <img class="icon" src="img/icons/python.svg" width="40" alt="Python">
                         <p>Ein in Python geschriebener Password-Generator, einfach ausführbar in der Konsole</p>
                     </div>
                     <div class="links">
@@ -70,7 +71,7 @@
                 <article class="project-noweb">
                     <div class="description">
                         <h2>Taschenrechner für die Konsole</h2>
-                        <img src="img/icons/python.svg" width="40" alt="Python">
+                        <img class="icon" src="img/icons/python.svg" width="40" alt="Python">
                         <p>Ein in Python geschriebener Taschenrechner in zwei Varianten, einfach ausführbar in der Konsole</p>
                     </div>
                     <div class="links">
@@ -80,7 +81,7 @@
                 <article class="project-noweb">
                     <div class="description">
                         <h2>Tic Tac Toe</h2>
-                        <img src="img/icons/java.svg" width="40" alt="Java">
+                        <img class="icon" src="img/icons/java.svg" width="40" alt="Java">
                         <p>Spiele Tic Tac Toe gegen einen anderen Spieler in der Konsole</p>
                     </div>
                     <div class="links">
@@ -90,7 +91,7 @@
                 <article class="project-noweb">
                     <div class="description">
                         <h2>Generation Checker</h2>
-                        <img src="img/icons/javascript.svg" width="40" alt="Web">
+                        <img class="icon" src="img/icons/javascript.svg" width="40" alt="Web">
                         <p>Überprüfe zu welcher Generation du gehörst und was deine Generation geprägt hat!</p>
                     </div>
                     <div class="links">
@@ -107,6 +108,7 @@
             </span>
             <p>&copy von Pascal Peters 2023</p>
         </footer>
+        <script src="js/modeswitch.js"></script>
     </body>
 
 </html>

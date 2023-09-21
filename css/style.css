@@ -93,7 +93,7 @@ html, body {
 
 footer {
     text-align: center;
-    background-color: #494949;
+    background-color: #1a1a1a;
     color: #FEFFFE;
     padding: 1em;
     position: relative;
@@ -178,10 +178,9 @@ footer {
 
 .icon {
     display: inline-block;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     background-size: cover;
-    margin: 1rem;
 }
 .icon-linkedin {
     background-image: url(../img/icons/linkedin_color.svg);
@@ -201,6 +200,79 @@ footer {
   
 .font-serif {
     font-family: "Merriweather", serif !important;
+}
+
+.mode-btn {
+    background-color:rgba(59, 71, 61, 0);
+    padding: 0;
+    margin: 0;
+    background-image: url(../img/icons/moon.svg);
+    width: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.mode-btn:hover {
+    cursor: pointer;
+}
+
+.dark-mode {
+    background-color: #1a1a1a !important;
+    color: white !important;
+    border-color: white;
+
+}
+
+.dark-mode a {
+    color: white;
+}
+
+.dark-mode .icon {
+    filter: invert(100%);
+}
+
+.dark-mode .icon-instagram, .icon-linkedin {
+    filter: invert(0%) !important;
+}
+
+@-webkit-keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+.fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+}
+  
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
 }
 
 @media only screen and (max-width: 1000px) {
