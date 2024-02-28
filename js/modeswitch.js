@@ -24,7 +24,7 @@ function goDark() {
         const modebtn = document.getElementById("mode-btn");
         modebtn.style.backgroundImage = "url('./img/icons/sun.svg')";
     } catch {};
-    
+    try { document.getElementById("contact-container").classList.add("dark-mode"); } catch {};
 }
 
 function goBright() {

@@ -29,4 +29,11 @@
 
 .project-noweb p {
     padding: 0.5em;
-} 
+}
+
+.highlight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}

@@ -1,4 +1,4 @@
-.formular {
+/*.formular {
     background-color: white;
     border-radius: 20px;
     border: 4px rgb(189, 189, 189) solid;
@@ -103,4 +103,19 @@ button {
     height: 200px;
     margin: 2em;
     text-align: center;
+}*/
+
+#contact-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    border-radius: 20px;
+    border: 2px #3F3F37 solid;
+    background-color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+.contact-card {
+
 }
