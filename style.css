@@ -50,6 +50,7 @@ body {
     color: var(--text);
     display: flex;
     justify-content: space-evenly;
+    margin-top: 4em;
 }
 
 .typewriter h1 {
@@ -262,10 +263,24 @@ footer a {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-top: 10em;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .icon {
+        width: 40px;
     }
 
     .pfp {
         width: 30%;
+        padding: 0;
     }
 
     .typewriter h1 {
@@ -279,6 +294,7 @@ footer a {
     .card {
         border-radius: 0;
         min-width: 100%;
+        padding: 1em 0.5em 1em 0.5em;
     }
 
     .projects {
