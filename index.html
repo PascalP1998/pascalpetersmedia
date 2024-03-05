@@ -2,77 +2,174 @@
 <html lang="de">
     <head>
         <title>Pascal Peters Media</title>
-        <link href="css/style.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Das Portfolio von Pascal Peters">
     </head>
     <body>
-        <nav id="navbar" class="navbar">
-            <h1>Pascal Peters <span class="green">Media</span>.</h1>
+        <nav id="navbar" class="navbar" id="top">
+            <h1><a href="#top">Pascal Peters <span class="primary">Media</span></a></h1>
             <ul>
-                <li><a href="index.html" class="current">Profil</a></li>
-                <li><a href="projects.html">Projekte</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Kontakt</a></li>
-                <li><button id="mode-btn" class="icon mode-btn"></button></li>
+                <li><a href="#profile" class="current">Profil</a></li>
+                <li><a href="#projects">Projekte</a></li>
+                <li><a href="#contact">Kontakt</a></li>
             </ul>
         </nav>
         <div class="container">
-            <section class="center-text">
-                <img src="img/ich.png" width="200" class="pfp">
-                <h1 class="title">Hi! Ich bin Pascal Peters und ich ...</h1>
-                <div class="hobby">
-                    <img class="icon" src="img/icons/student.svg" style="width: 90px !important; height: 90px !important" alt="Abiturmütze">
-                    <img class="icon" src="img/icons/code.svg" style="width: 90px !important; height: 90px !important" alt="Programmieren">
-                    <img class="icon" src="img/icons/camera.svg" style="width: 90px !important; height: 90px !important" alt="Kamera">
+            <div class="greetings">
+                <img src="img/ich.png" width="300" class="pfp alt="Ein Bild von mir">
+                <div class="greetings-text">
+                    <div class="typewriter">
+                        <h1>Pascal Peters</h1>
+                    </div>
+                    <span class="subtext">Junior Software- und Web-Entwickler</span>
                 </div>
-                <ul class="font-serif">
-                    <li>... studiere an der Universität Duisburg-Essen <em>Angewandte Kognitions- und Medienwissenschaften</em> im letzten Semester</li>
-                    <li>... arbeite zur Zeit an meiner Bachelor-Abschlussarbeit</li>
-                    <li>... habe Erfahrungen in der Webentwicklung mit HTML, CSS und JavaScript</li>
-                    <li>... habe solide Grunderfahrung mit Python und ein wenig Erfahrung mit Java und C#</li>
-                    <li>... möchte in die IT-Branche einsteigen, gewünscht als Software- oder Web-Entwickler, interessiere mich aber auch für UX und UI-Design</li>
-                    <li>... fotografiere gern in meiner Freizeit</li>
+            </div>
+            <div id="profile" class="card">
+                <h1>Wer bin ich?</h1>
+                <div class="hobby">
+                    <img class="icon" src="img/icons/student_white.svg" alt="Student">
+                    <img class="icon" src="img/icons/code.svg" alt="Programmieren">
+                    <img class="icon" src="img/icons/camera.svg" alt="Kamera">
+                </div>
+                <ul>
+                    <li><strong>2018 - 2024:</strong> <em><span class="buzz">Angewandte Kognitions- und Medienwissenschaften</span></em> (B.Sc.) an der Universität Duisburg-Essen studiert*</li>
+                    <li>In meinem Studium habe ich die Grundlagen der Web-Entwicklung und Programmierung kennengelernt, <span class="buzz">agiles Projektmanagement</span> und die Entwicklung von Videospielen in Engines wie <span class="buzz">Unity</span> mit <span class="buzz">C#</span></li>
+                    <li>Auch die Grundlagen von <span class="buzz">Machine Learning</span> und <span class="buzz">Data Science</span> mit <span class="buzz">Python</span> habe ich kennengelernt</li>
+                    <li>Abseits vom Studium habe ich mich auch in meiner Freizeit tiefer mit der Entwicklung auseinandergesetzt, besonders im Bereich der <span class="buzz">Fullstack</span> Web-Entwicklung mit Frameworks wie <span class="buzz">React</span></li>
+                    <li>Ich möchte in die IT-Branche einsteigen, bevorzugt als Software- / Web-Entwickler</li>
+                    <li>In meiner Freizeit fotografiere ich gerne, um auch mal vom Bildschirm wegzukommen :)</li>
                 </ul>
-            </section>
-            <section class="text-block">
-                <h2>Was findest du auf meiner Seite?</h2>
-                <p class="font-serif">Hauptsächlich möchte ich hier alles zeigen, was ich bisher gemacht habe. Seien es kleinere Coding-Projekte, meine Fotos oder 
-                                      bald auch Blogtexte zu diversen Themen, die mich interessieren. Wenn ich dich neugierig machen konnte, schau dich ein bisschen um
-                                    und solltest du mich kontaktieren wollen, kannst du das selbstverständlich machen! Danke für's Lesen!</p>
-            </section>
-            <section class="other">
-                <article class="card">
-                    <img class="icon" src="img/icons/github.svg" alt="GitHub">
-                    <h2><a href="projects.html">Meine Projekte</a></h2>
-                    <p>Hier kommst du zu meinen Projekten</p>
-                </article>
-                <article class="card">
-                    <img class="icon" src="img/icons/blog.svg" alt="Blog">
-                    <h2><a href="blog.html">Mein Blog</a></h2>
-                    <p>Hier kommst du zu meinem Blog</p>
-                </article>
-                <article class="card">
-                    <img class="icon" src="img/icons/image-gallery.svg" alt="Fotoalbum">
-                    <h2><a href="gallery.html">Meine Galerie</a></h2>
-                    <p>Hier kommst du zu meiner Fotogalerie</p>
-                </article>
-                <article class="card">
-                    <img class="icon" src="img/icons/contact-book.svg" alt="Kontaktbuch">
-                    <h2><a href="contact.html">Kontakt</a></h2>
-                    <p>Von hier aus kann man mich kontaktieren</p>
-                </article>
-            </section>
-        </div>
-        <script src="js/modeswitch.js"></script>
+                <span>* Abschlussarbeit wurde eingereicht, die endgültige Benotung und damit auch das Abschlusszeugnis folgt</span>
+            </div>
+            <div id="projects" class="card">
+                <h1>Projekte</h1>
+                <img class="icon" src="img/icons/github.svg" alt="Github Logo">
+                <div class="projects">
+                    <div class="project highlight">
+                        <div class="pr-h">
+                            <img class="small-icon" src="img/icons/react_white.svg" alt="React">
+                            <h2><em>My Finance</em></h2>
+                        </div>
+                        <p>Eine MERN-Fullstack Web-App für Finanzüberblick</p>
+                        <p>Benutzte Technologien: React, Node mit Express, MongoDB</p>
+                        <div class="links">
+                            <a href="https://github.com/PascalP1998/my-finance" target="_blank">GitHub Repo</a>
+                            <a href="https://my-finance-web.netlify.app/" target="_blank">Live Demo</a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="pr-h">
+                            <img class="small-icon" src="img/icons/javascript_white.svg" alt="JavaScript">
+                            <h2><em>Schere, Stein, Papier</em></h2>
+                        </div>
+                        <p>Spiele "Schere, Stein, Papier" gegen den Computer</p>
+                        <div class="links">
+                            <a href="https://github.com/PascalP1998/rock-paper-scissor" target="_blank">GitHub Repo</a>
+                            <a href="https://pascalp1998.github.io/rock-paper-scissor/" target="_blank">Live Demo</a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="pr-h">
+                            <img class="small-icon" src="img/icons/javascript_white.svg" alt="JavaScript">
+                            <h2><em>BMI-Rechner</em></h2>
+                        </div>
+                        <p>Ein einfacher Online BMI-Rechner</p>
+                        <div class="links">
+                            <a href="https://github.com/PascalP1998/bmi-calculator" target="_blank">GitHub Repo</a>
+                            <a href="https://pascalp1998.github.io/bmi-calculator/" target="_blank">Live Demo</a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="pr-h">
+                            <img class="small-icon" src="img/icons/javascript_white.svg" alt="JavaScript">
+                            <h2><em>Charakter Generator</em></h2>
+                        </div>
+                        <p>Erstelle zufallsbasierte Fantasy-Charaktere für das Schreiben von Geschichten, für Tabletop-Rollenspiele, etc.</p>
+                        <div class="links">
+                            <a href="https://github.com/PascalP1998/character-generator" target="_blank">GitHub Repo</a>
+                            <a href="https://pascalp1998.github.io/character-generator/" target="_blank">Live Demo</a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="pr-h">
+                            <img class="small-icon" src="img/icons/javascript_white.svg" alt="JavaScript">
+                            <h2><em>Generation Checker</em></h2>
+                        </div>
+                        <p>Überprüfe zu welcher Generation du gehörst und was deine Generation geprägt hat!</p>
+                        <div class="links">
+                            <a href="https://github.com/PascalP1998/generation-checker" target="_blank">GitHub Repo</a>
+                            <a href="https://pascalp1998.github.io/generation-checker/" target="_blank">Live Demo</a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="pr-h">
+                            <img class="small-icon" src="img/icons/python_white.svg" alt="Python">
+                            <h2><em>Password Generator</em></h2>
+                        </div>
+                        <p>Ein in Python geschriebener Password-Generator, einfach ausführbar in der Konsole</p>
+                        <div class="links">
+                            <a href="https://github.com/PascalP1998/password-generator" target="_blank">GitHub Repo</a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="pr-h">
+                            <img class="small-icon" src="img/icons/python_white.svg" alt="Python">
+                            <h2><em>Taschenrechner für die Konsole</em></h2>
+                        </div>
+                        <p>Ein in Python geschriebener Taschenrechner in zwei Varianten, einfach ausführbar in der Konsole</p>
+                        <div class="links">
+                            <a href="https://github.com/PascalP1998/calculator-py" target="_blank">GitHub Repo</a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="pr-h">
+                            <img class="small-icon" src="img/icons/java_white.svg" alt="Python">
+                            <h2><em>Tic Tac Toe</em></h2>
+                        </div>
+                        <p>Spiele Tic Tac Toe gegen einen anderen Spieler in der Konsole</p>
+                        <div class="links">
+                            <a href="https://github.com/PascalP1998/tic-tac-toe" target="_blank">GitHub Repo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="contact" class="card">
+                <h1>Kontakt</h1>
+                <img class="icon" src="img/icons/contact-book.svg" alt="Kontaktbuch">
+                <div class="contact-item">
+                    <div class="contact-link">
+                        <img class="small-icon" src="img/icons/mail.svg" alt="E-Mail">
+                        <span><a href="mailto:pascalpeters98@icloud.com" target="_blank">pascalpeters98@icloud.com</a></span>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-link">
+                        <img class="small-icon" src="img/icons/linkedin.svg" alt="LinkedIn">
+                        <span><a href="https://www.linkedin.com/in/pascalpeters98/" target="_blank">/pascalpeters98</a></span>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-link">
+                        <img class="small-icon" src="img/icons/xing_white.svg" alt="Xing">
+                        <span><a href="https://www.xing.com/profile/Pascal_Peters08733" target="_blank">/Pascal_Peters08733</a></span>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-link">
+                        <img class="small-icon" src="img/icons/github.svg" alt="Github">
+                        <span><a href="https://github.com/PascalP1998" target="_blank">/PascalP1998</a></span>
+                    </div>
+                </div>
+            </div>
     </body>
     <footer>
-        <span class="icons">
-            <a href="https://www.linkedin.com/in/pascal-peters-15a417276/" target=”_blank><span class="icon icon-linkedin"></span></a>
-            <a href="https://www.xing.com/profile/Pascal_Peters08733/" target=”_blank><span class="icon icon-xing"></span></a>
-            <a href="https://www.instagram.com/vencal.photos/" target=”_blank><span class="icon icon-instagram"></span></a>
-        </span>
-        <p>&copy von Pascal Peters 2024</p>
+        <span>Copyright &copy Pascal Peters 2024</span>
+        <a class="up" href="#top">
+            <svg fill="currentColor" width="30px" height="30px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 16q0-3.232 1.28-6.208t3.392-5.12 5.12-3.392 6.208-1.28q3.264 0 6.24 1.28t5.088 3.392 3.392 5.12 1.28 6.208q0 3.264-1.28 6.208t-3.392 5.12-5.12 3.424-6.208 1.248-6.208-1.248-5.12-3.424-3.392-5.12-1.28-6.208zM4 16q0 3.264 1.6 6.048t4.384 4.352 6.016 1.6 6.016-1.6 4.384-4.352 1.6-6.048-1.6-6.016-4.384-4.352-6.016-1.632-6.016 1.632-4.384 4.352-1.6 6.016zM10.048 13.632q0.096-0.608 0.544-1.056l4-4q0.576-0.576 1.408-0.576t1.408 0.576l4 4q0.448 0.448 0.544 1.056t-0.096 1.152q-0.224 0.544-0.736 0.896t-1.12 0.32h-1.984v6.016q0 0.832-0.608 1.408t-1.408 0.576-1.408-0.576-0.576-1.408v-6.016h-2.016q-0.608 0-1.12-0.32t-0.736-0.896-0.096-1.152z"></path>
+            </svg>
+        </a>
     </footer>
 </html>

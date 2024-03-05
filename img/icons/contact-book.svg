@@ -1,43 +1,9 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
-<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-<g>
-	<g>
-		<path d="M448,64h-48V16c0-8.832-7.168-16-16-16H96C69.536,0,48,21.536,48,48v400c0,35.296,28.704,64,64,64h336
-			c8.832,0,16-7.168,16-16V80C464,71.168,456.832,64,448,64z M368,400c0,8.832-7.168,16-16,16H160c-8.832,0-16-7.168-16-16v-32
-			c0-44.128,35.904-80,80-80h64c44.128,0,80,35.872,80,80V400z M192,192c0-35.296,28.704-64,64-64s64,28.704,64,64s-28.704,64-64,64
-			C220.704,256,192,227.296,192,192z M368,64H96c-8.832,0-16-7.168-16-16c0-8.832,7.168-16,16-16h272V64z"/>
-	</g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g>
+        <g>
+            <path d="M448,64L400,64L400,16C400,7.168 392.832,0 384,0L96,0C69.536,0 48,21.536 48,48L48,448C48,483.296 76.704,512 112,512L448,512C456.832,512 464,504.832 464,496L464,80C464,71.168 456.832,64 448,64ZM368,400C368,408.832 360.832,416 352,416L160,416C151.168,416 144,408.832 144,400L144,368C144,323.872 179.904,288 224,288L288,288C332.128,288 368,323.872 368,368L368,400ZM192,192C192,156.704 220.704,128 256,128C291.296,128 320,156.704 320,192C320,227.296 291.296,256 256,256C220.704,256 192,227.296 192,192ZM368,64L96,64C87.168,64 80,56.832 80,48C80,39.168 87.168,32 96,32L368,32L368,64Z" style="fill:white;fill-rule:nonzero;"/>
+        </g>
+    </g>
 </svg>
