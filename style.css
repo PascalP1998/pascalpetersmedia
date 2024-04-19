@@ -51,6 +51,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     margin-top: 4em;
+    align-items: center;
 }
 
 .typewriter h1 {
@@ -151,12 +152,8 @@ body {
 .container ul li {
     padding: 0.5em;
     text-align: left;
-    list-style-type: none;
-}
-
-.container ul li:before {
-    content: "❯";
-    padding: 1em;
+    list-style: "❯";
+    
 }
 
 .container a {
@@ -256,6 +253,14 @@ footer a {
 .contact-link {
     display: flex;
     align-items: center;
+}
+
+.list-container {
+    width: 90%;
+}
+
+.list-item {
+    display: flex;
 }
 
 @media only screen and (max-width: 1000px) {
